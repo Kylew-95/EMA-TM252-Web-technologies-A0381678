@@ -4,6 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/EMA-TM252-Web-technologies-A0381678/custom.css"
+    />
   </head>
   <body></body>
 </html>
+<!-- Form area -->
+    <form action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php" method="post" id="contact-form">
+        <h1>Contact Form</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Barry Allen" required />
+
+        <div  id="email-password-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email@email.com" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="5" maxlength="20" placeholder="Password"  required />
+        </div>
+
+        <textarea name="message" id="message" 
+            required placeholder="Enter your message here..."
+            rows="15" cols="50"
+        ></textarea>
+
+        <time datetime=""></time>
+
+        <button type="submit">Submit</button>
+    </form>
+ <p hidden>10002000-3000-123456abcdef</p>
+  </body>
