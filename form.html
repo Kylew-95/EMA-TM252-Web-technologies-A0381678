@@ -4,36 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
-    <link rel="shortcut icon" href="image/form_icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="image/form_icon.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="/EMA-TM252-Web-technologies-A0381678/custom.css"
     />
   </head>
-<!-- Form area -->
-    <form action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php" method="post" id="contact-form">
-        <h1>Contact Form</h1>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Barry Allen" required />
-
-        <div  id="email-password-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="email@email.com" required />
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" minlength="5" maxlength="20" placeholder="Password"  required />
+  <body>
+    <!-- Navivagion -->
+    <div class="container">
+      <!-- image and heading -->
+      <div id="header_img_container">
+        <img id="edumax_logo" src="image/EduMax_logo.png" alt="form icon" />
+        <h1>EduMax</h1>
+      </div>
+      <!-- Nav area -->
+      <div class="nav_container">
+        <nav>
+          <ul>
+            <li><a href="form.html">Home</a></li>
+            <li><a href="form.html">News</a></li>
+            <li><a href="form.html"> Your Courses</a></li>
+            <li><a href="form.html">Contact</a></li>
+            <li><a href="form.html">About</a></li>
+          </ul>
+        </nav>
+        <div class="col">
+          <!-- search box -->
+          <form role="search">
+            <input
+              id="search-box"
+              class="form-control me-2"
+              type="search"
+              placeholder="search"
+              aria-label="search"
+            />
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
         </div>
-        <label for="date">Select Date and Time:</label>
-<input type="date" name="date" id="date" required />
+      </div>
+    </div>
 
-        <textarea name="message" id="message" 
-            required placeholder="Enter your message here..."
-            rows="15" cols="50"
-        ></textarea>
-        
-        <input type="itemID" name="itemID" value="10002000-3000-123456abcdef" hidden>
+    <!-- Form area -->
+    <form
+      action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php"
+      method="post"
+      id="contact-form"
+    >
+      <h2>Edit news item</h2>
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Barry Allen"
+          required
+        />
+      </div>
+      <div id="email-password-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@email.com"
+          required
+        />
 
-        <button type="submit" >Submit</button>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="5"
+          maxlength="20"
+          placeholder="Password"
+          required
+        />
+      </div>
+      <label for="date">Select Date and Time:</label>
+      <input type="date" name="date" id="date" required />
+
+      <textarea
+        name="message"
+        id="message"
+        required
+        placeholder="Enter your message here..."
+        rows="15"
+        cols="60"
+      ></textarea>
+
+      <input
+        type="itemID"
+        name="itemID"
+        value="10002000-3000-123456abcdef"
+        hidden
+      />
+
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
