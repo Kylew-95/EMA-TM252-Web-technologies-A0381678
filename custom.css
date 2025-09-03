@@ -1,5 +1,6 @@
 :root {
   --btn_colour: #288080;
+  --background_colour: #288080;
 }
 
 * {
@@ -24,7 +25,7 @@
 #header_img_container {
   margin: 0;
   display: flex;
-  background-color: #288080;
+  background-color: var(--background_colour);
   height: inherit;
 }
 #edumax_logo {
@@ -44,40 +45,6 @@ h2 {
 /* Nav CSS */
 .nav_container {
   background-color: #212529;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
-  flex-shrink: inherit;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  gap: 5px;
-  padding: 10px 10px;
-}
-
-ul li a {
-  display: block;
-  color: rgb(204, 204, 204);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  justify-self: center;
-}
-
-ul li a:hover {
-  color: #fffcfc;
-}
-
-#search-box {
-  font-size: 15px;
-  margin-left: auto;
-  padding: 6px;
-  border: none;
-  border-radius: 1px;
 }
 
 /* form CSS */
@@ -90,12 +57,6 @@ ul li a:hover {
   margin-top: 20px;
   margin-bottom: 20px;
   gap: 20px;
-}
-
-#email-password-group {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
 }
 
 button {
@@ -124,28 +85,6 @@ button:hover {
     width: 400px;
     height: 400px;
     flex-shrink: auto;
-  }
-
-  ul li a {
-    display: block;
-    color: rgb(204, 204, 204);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    justify-self: center;
-    font-size: 30px;
-  }
-
-  #search-box {
-    font-size: 25px;
-    margin-left: auto;
-    margin-right: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 1px;
-  }
-  #search-btn {
-    font-size: 25px;
   }
 
   /* make container bigger */
@@ -182,18 +121,11 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 550px) {
   .form-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  #email-password-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    width: 100%;
   }
 
   #message {
@@ -214,24 +146,10 @@ button:hover {
   }
   .container {
     max-width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
-  ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-  }
-  ul li a {
-    display: block;
-    color: rgb(204, 204, 204);
-    text-align: center;
-    text-decoration: none;
-  }
-
-  /* hide search */
-  #search-box {
-    display: none;
-  }
   .btn {
     display: none;
   }
