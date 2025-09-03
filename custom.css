@@ -1,6 +1,7 @@
 :root {
   --btn_colour: #288080;
   --background_colour: #288080;
+  --admin_badge_colour: #dfdfdf;
 }
 
 * {
@@ -33,6 +34,15 @@
   height: 250px;
   flex-shrink: auto;
 }
+#Admin {
+  background-color: var(--admin_badge_colour);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 15px;
+  position: absolute;
+  top: 20px;
+}
+
 h1 {
   color: white;
   font-size: calc(5px + 7vw);
@@ -45,6 +55,16 @@ h2 {
 /* Nav CSS */
 .nav_container {
   background-color: #212529;
+}
+
+#form-group-datetime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
 /* form CSS */
@@ -78,7 +98,7 @@ button:hover {
 /* If scrren is less that or equal to the max width change values to fit screen */
 @media screen and (min-width: 2560px) {
   .container {
-    max-width: 80%;
+    max-width: 200%;
   }
 
   #edumax_logo {
@@ -148,6 +168,15 @@ button:hover {
     max-width: 100%;
     padding-right: 0px;
     padding-left: 0px;
+  }
+  .form-group-datetime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 30px;
   }
 
   .btn {
