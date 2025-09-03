@@ -149,8 +149,75 @@
           placeholder="The Life of Barry Allen"
           value="The Life of Barry Allen"
           required
-          aria-label="Your name"
+          aria-label="Article Title"
         />
+        <div id="misc">
+          <label for="editor">Editor: </label>
+          <input
+            class="input-field"
+            type="text"
+            id="editor"
+            name="editor"
+            placeholder="Kyle Williams"
+            value="Kyle Williams"
+            required
+            aria-label="Editor name"
+          />
+          <label for="category">Category: </label>
+          <input
+            class="input-field"
+            type="text"
+            id="category"
+            name="category"
+            placeholder="Science Fiction"
+            value="Science Fiction"
+            required
+            aria-label="Article category"
+          />
+
+          <!-- Tags -->
+          <div>
+            <label for="tags">Tags: </label>
+            <label for="tag1"> superhero</label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="superhero"
+              value="superhero"
+            />
+            <label for="tag2"> action</label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="action"
+              value="action"
+              checked
+            />
+            <label for="tag3"> drama</label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="drama"
+              value="drama"
+            />
+            <label for="tag4"> DC Comics</label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="DC Comics"
+              value="DC Comics"
+              checked
+            />
+            <label for="tag5"> The Flash</label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="The Flash"
+              value="The Flash"
+              checked
+            />
+          </div>
+        </div>
       </div>
       <div class="form-group-datetime">
         <label for="date">Release Date: </label>

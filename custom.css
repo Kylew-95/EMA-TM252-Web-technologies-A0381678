@@ -68,6 +68,15 @@ h2 {
 }
 
 /* form CSS */
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
 #contact-form {
   display: flex;
   flex-shrink: inherit;
@@ -138,6 +147,18 @@ button:hover {
   h1 {
     flex-wrap: wrap;
     font-size: 12vw;
+  }
+
+  .form-group
+  {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #misc
+  {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
   }
 }
 
