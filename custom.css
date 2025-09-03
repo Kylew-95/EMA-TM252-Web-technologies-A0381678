@@ -57,16 +57,6 @@ h2 {
   background-color: #212529;
 }
 
-#form-group-datetime {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  gap: 10px;
-}
-
 /* form CSS */
 .form-group {
   display: flex;
@@ -75,6 +65,10 @@ h2 {
   justify-content: center;
   margin-top: 20px;
   gap: 20px;
+}
+
+.checkbox {
+  margin-right: 10px;
 }
 
 #contact-form {
@@ -86,6 +80,16 @@ h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   gap: 20px;
+}
+
+#form-group-datetime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
 button {
@@ -149,16 +153,14 @@ button:hover {
     font-size: 12vw;
   }
 
-  .form-group
-  {
+  .form-group {
     flex-direction: column;
     gap: 10px;
   }
-  #misc
-  {
+  #misc {
     display: flex;
     flex-direction: column;
-    max-width: 70%;
+    max-width: 50%;
   }
 }
 
