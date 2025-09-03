@@ -11,69 +11,82 @@
     />
   </head>
   <body>
-    <!-- Navivagion -->
     <div class="container">
-      <!-- image and heading -->
       <div id="header_img_container">
-        <img id="edumax_logo" src="image/EduMax_logo.png" alt="form icon" />
+        <img
+          id="edumax_logo"
+          src="image/EduMax_logo.png"
+          alt="EduMax logo"
+          aria-label="EduMax logo"
+        />
         <h1>EduMax</h1>
       </div>
-      <!-- Nav area -->
       <div class="nav_container">
-        <nav>
+        <nav aria-label="Main navigation">
           <ul>
             <li><a href="form.html">Home</a></li>
             <li><a href="form.html">News</a></li>
-            <li><a href="form.html"> Your Courses</a></li>
+            <li><a href="form.html">Your Courses</a></li>
             <li><a href="form.html">Contact</a></li>
             <li><a href="form.html">About</a></li>
           </ul>
         </nav>
         <div class="col">
-          <!-- search box -->
-          <form role="search">
+          <form role="search" aria-label="Site search">
             <input
               id="search-box"
               class="form-control me-2"
               type="search"
               placeholder="search"
-              aria-label="search"
+              aria-label="Search the site"
             />
-            <button class="btn btn-outline-info" type="submit">Search</button>
+            <button
+              id="search-btn"
+              class="btn btn-outline-info"
+              type="submit"
+              aria-label="Submit search"
+            >
+              Search
+            </button>
           </form>
         </div>
       </div>
     </div>
 
-    <!-- Form area -->
     <form
       action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php"
       method="post"
       id="contact-form"
+      aria-label="Edit news item form"
     >
       <h2>Edit news item</h2>
-      <div>
+      <div class="form-group">
         <label for="name">Name:</label>
         <input
+          class="input-field"
           type="text"
           id="name"
           name="name"
           placeholder="Barry Allen"
           required
+          aria-label="Your name"
         />
       </div>
-      <div id="email-password-group">
+      <div class="form-group" id="email-password-group">
         <label for="email">Email:</label>
         <input
+          class="input-field"
           type="email"
           id="email"
           name="email"
           placeholder="email@email.com"
           required
+          aria-label="Email address"
         />
 
         <label for="password">Password:</label>
         <input
+          class="input-field"
           type="password"
           id="password"
           name="password"
@@ -81,28 +94,39 @@
           maxlength="20"
           placeholder="Password"
           required
+          aria-label="Password"
         />
       </div>
       <label for="date">Select Date and Time:</label>
-      <input type="date" name="date" id="date" required />
+      <input
+        class="input-field"
+        type="date"
+        name="date"
+        id="date"
+        required
+        aria-label="Select date and time"
+      />
 
       <textarea
+        class="input-field"
         name="message"
         id="message"
         required
-        placeholder="Enter your message here..."
+        placeholder="Enter your edit here... 'The Flash is fastest in the universe!'"
         rows="15"
         cols="60"
+        aria-label="Message content"
       ></textarea>
 
       <input
         type="itemID"
         name="itemID"
         value="10002000-3000-123456abcdef"
+        aria-label="hidden item ID"
         hidden
       />
 
-      <button type="submit">Submit</button>
+      <button type="submit" aria-label="Submit form">Submit</button>
     </form>
   </body>
 </html>
