@@ -8,15 +8,13 @@
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-
-  .input-field {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+}
+.input-field {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-/* place holder comment */
 .container {
   max-width: 60vw;
   margin: auto;
@@ -32,7 +30,7 @@
 #edumax_logo {
   width: 250px;
   height: 250px;
-  flex-shrink: auto;
+  flex-shrink: inherit;
 }
 #Admin {
   background-color: var(--admin_badge_colour);
@@ -117,7 +115,7 @@ button:hover {
   #edumax_logo {
     width: 400px;
     height: 400px;
-    flex-shrink: auto;
+    flex-shrink: inherit;
   }
 
   /* make container bigger */
@@ -179,7 +177,7 @@ button:hover {
   #edumax_logo {
     width: 150px;
     height: 150px;
-    flex-shrink: auto;
+    flex-shrink: inherit;
   }
   h1 {
     font-size: calc(30px + 4vw);
